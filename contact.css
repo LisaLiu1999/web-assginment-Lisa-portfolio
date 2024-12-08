@@ -59,3 +59,82 @@ button:hover {
     color: #5F7991;
 }
 
+
+
+
+/* phone screen max 768px */
+@media screen and (max-width: 768px) {
+    .contact-container {
+        margin: 20px auto;
+        padding: 30px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    input, textarea {
+        font-size: 14px;
+        height: 35px;
+    }
+
+    textarea {
+        height: 100px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+/* tablet max 1024px */
+@media screen and (max-width: 1024px) {
+    .contact-container {
+        padding: 40px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    input, textarea {
+        font-size: 15px;
+        height: 38px;
+    }
+
+    textarea {
+        height: 110px;
+    }
+
+    button {
+        font-size: 15px;
+        padding: 11px;
+    }
+}
+
+/* bigger 1200px  */
+@media screen and (min-width: 1200px) {
+    .contact-container {
+        max-width: 700px;
+        padding: 60px;
+    }
+
+    h1 {
+        font-size: 2.4rem;
+    }
+
+    input, textarea {
+        font-size: 17px;
+        height: 42px;
+    }
+
+    textarea {
+        height: 130px;
+    }
+
+    button {
+        font-size: 17px;
+        padding: 14px;
+    }
+}
