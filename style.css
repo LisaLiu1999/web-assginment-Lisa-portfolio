@@ -139,3 +139,100 @@ footer {
     padding: 1rem;
     margin-top: auto;
 }
+
+
+
+
+/* ------------ Media Queries  ------------- */
+
+/* phone screen max:768px */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .left-section,
+    .right-section {
+        max-width: 100%;
+        flex: none;
+    }
+
+    .left-section h1 {
+        font-size: 2.4rem;
+        text-align: center;
+    }
+
+    .left-section p {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .contact-button {
+        display: block;
+        margin: 1.5rem auto;
+        text-align: center;
+    }
+
+    .icons {
+        justify-content: center;
+    }
+
+    .profile-photo {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .work-buttons {
+        text-align: center;
+    }
+
+    .work-buttons p {
+        font-size: 1rem;
+    }
+
+    .work-button {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+}
+
+/* tablet max 1024px */
+@media screen and (max-width: 1024px) {
+    .container {
+        gap: 1.5rem;
+    }
+
+    .left-section h1 {
+        font-size: 2.8rem;
+    }
+
+    .left-section p {
+        font-size: 1.1rem;
+    }
+}
+
+/* bigger screen max 1200px */
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 1400px;
+    }
+
+    .left-section h1 {
+        font-size: 3.5rem;
+    }
+
+    .left-section p {
+        font-size: 1.3rem;
+    }
+
+    .contact-button {
+        padding: 1rem 2.5rem;
+        font-size: 1.1rem;
+    }
+
+    .work-button {
+        padding: 1rem 2.5rem;
+    }
+}
