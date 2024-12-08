@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+  }
+  h1 a {
+    display: inline-block;
+    margin: 20px;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out
+  }
+  h1 {
+      letter-spacing: 0.05em
+  }
+  h1 a:hover{
+    color: #807d7d;
+  }
+
+  body {
+    font-family: Newsreader, Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  .container {
+    display: flex;
+  }
+  
+  .sidebar {
+    font-size: 1.1rem;
+    background-color: #f0e9df;
+    padding: 30px;
+    width: 400px;
+  }
+  
+  .sidebar h2 {
+    margin-top: 20px;
+    margin-bottom: 50px
+    
+  }
+  
+  .sidebar ul {
+    list-style-type: none;
+  }
+  
+  .sidebar li {
+    margin-bottom: 20px;
+  }
+  
+  .sidebar li a {
+    color: #807d7d;
+    text-decoration: none;
+}
+
+.sidebar li a:hover {
+  color: #333;
+  font-weight: bold;
+  transform: scale(1.05);
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+  
+  .main-content {
+      flex-grow: 1;
+      padding: 40px; 
+      background-color: #fff;
+  }
+  #about {
+    padding: 1.2rem;
+  }
+  #about p {
+    font-size: 1.2rem;
+    font-style: italic;
+    font-weight: 300;
+  }
+  #portfolio {
+    text-align: center;
+    padding: 2rem;
+    margin-bottom: 50px;
+  }
+  
+  .portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .portfolio-item {
+    background-color: #f0e9df;
+      padding: 20px;
+      border: 1px solid #f0e9df;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .portfolio-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+
+  footer {
+    text-align: center;
+    background-color: #fff;
+    color: #707070;
+    font-size: 0.9rem;
+    padding: 1rem;
+    margin-top: auto;
+}
+

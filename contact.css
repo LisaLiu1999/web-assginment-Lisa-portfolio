@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap');
+
+body {
+    font-family: Newsreader, sans-serif;
+    background-color: #F8F4EC;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.contact-container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    
+}
+input, textarea {
+    font-family: Newsreader, sans-serif;
+    width: 100%;
+    margin-bottom: 40px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    height: 40px;
+}
+textarea {
+    height: 120px;
+}
+
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #5F7991;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #F8F4EC;
+    color: #5F7991;
+}
+
