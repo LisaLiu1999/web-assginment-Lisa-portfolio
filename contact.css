@@ -158,38 +158,27 @@ footer {
   margin-top: auto;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    body {
-        flex-direction: column;
-    }
+/* -------Responsive Design-------- */
 
-    .sidebar {
-        width: 100%;
-        position: static;
-        height: auto;
-        padding: 20px;
-    }
-
-    .contact-container {
-        margin-left: 0;
-        padding: 20px;
-    }
-
-    #contact-form {
-        width: 100%;
-        max-width: none;
-    }
+@media screen and (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    position: static;
+    height: auto;
+    padding: 20px;
 }
 
-@media (max-width: 480px) {
-    .top-navigation ul {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
+.top-navigation ul {
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+.contact-container {
+  margin-left: 0;
+  padding: 20px;
     }
 
-    .sidebar-header h1 {
-        font-size: 1.6rem;
-    }
+  #contact-form {
+  width: 100%;
+  }
 }

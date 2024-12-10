@@ -65,7 +65,7 @@ header {
     text-align: center;
     background-color: #fdf9f3;
     position: absolute;
-    top: 40px;
+    top: 80px;
     left: 0;
     width: 100%;
     padding: 10px 0;
@@ -194,8 +194,8 @@ footer {
 
 /* ------------ Responsive  ------------- */
 
-/* phone: smax-width 768px */
 @media screen and (max-width: 768px) {
+    
     .menu-toggle {
         display: block;
         }
@@ -231,9 +231,12 @@ footer {
 
     .contact-button {
         display: block;
-        padding:1rem;
-        width: 30%;
-        margin: 1.0rem auto;
+        width:50%;
+        padding: 1rem;
+        margin: 1rem auto;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
         text-align: center;
     }
 

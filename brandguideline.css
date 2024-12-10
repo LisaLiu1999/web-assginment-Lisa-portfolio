@@ -161,7 +161,7 @@ footer {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .sidebar {
         width: 100%;
         position: static;
@@ -184,7 +184,7 @@ footer {
     }
 }
 
-@media (max-width: 480px) {
+@media screen and  (max-width: 480px) {
     .top-navigation ul {
         flex-direction: column;
         align-items: center;
