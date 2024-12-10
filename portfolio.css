@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Newsreader', Arial, sans-serif;
+    line-height: 1.6;
+    min-height: 100vh;
+    color: #333
+}
+
+/* Sidebar */
+.sidebar {
+  width: 200px;
+  background-color: #f0e9df;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+
+.sidebar-header {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.sidebar-header h1 {
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.sidebar-header h1 a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+.sidebar-header h1 a:hover {
+  color: #807d7d;
+
+}
+/* Navigation */
+.top-navigation {
+    width: 100%;
+    flex-grow: 1;
+}
+
+.top-navigation ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.top-navigation li {
+    width: 100%;
+    text-align: center;
+}
+
+.top-navigation li a {
+    color: #807d7d;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: block;
+    padding: 10px 15px;
+}
+
+.top-navigation li a:hover {
+    color:#333;
+    border-radius: 5px;
+    background-color: rgba(208, 194, 179, 0.5);
+    transform: scale(1.05);
+}
+
+
+/* Main-content */
+hr {
+    border: none; 
+    height: 1px; 
+    width: 50%; 
+    margin:  auto;
+    border-top: 1px solid #b7b0ab;
+}
+.main-content {
+  flex-grow: 1;
+  padding: 40px 40px 40px 240px;
+
+}
+
+#about {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+#about p {
+  font-size: 1.2rem;
+  font-style: italic;
+  font-weight: 300;
+}
+
+#portfolio {
+  text-align: center;
+  width: 100%;
+}
+
+#portfolio h3 {
+  margin-bottom: 1rem;
+}
+
+#portfolio p {
+  margin-bottom: 2rem;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 40px;
+  gap: 20px;
+  width: 100%;
+}
+
+.portfolio-item {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    
+}
+
+.portfolio-item:hover {
+  transform: scale(1.05);
+}
+
+.portfolio-image {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* image overlay  */
+.portfolio-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(245, 241, 237); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0; /* hidden */
+    font-weight: bold;
+    z-index: 2; 
+    transition: opacity 0.3s ease; 
+  }
+.portfolio-overlay h4{
+    font-size: 1.5rem;
+    color: #917f7f;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.portfolio-overlay p {
+    color: #4b4b4b;
+    font-size: 1.5rem;
+    margin: 10px 0; 
+    padding: 0 20px;
+    text-align: center; 
+}
+
+  .portfolio-item:hover .portfolio-overlay {
+    opacity: 1; /* Show */
+  }
+  
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #fff;
+    color: #707070;
+    font-size: 0.9rem;
+    padding: 1rem;
+    width: 100%;
+    margin-top: auto;
+}
+
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .main-content {
+        padding: 30px 30px 30px 280px;    
+    }
+    .portfolio-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        position: static;
+        height: auto;
+        padding: 20px;
+    }
+
+    .top-navigation ul {
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .main-content {
+        padding: 20px;
+        margin-left: 0;
+    }
+
+    .portfolio-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .sidebar-header h1 {
+        font-size: 1.8rem;
+    }
+
+    .portfolio-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .top-navigation ul {
+        flex-direction: column;
+        gap: 5px;
+    }
+}

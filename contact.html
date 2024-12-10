@@ -1,27 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Form</title>
-    <link rel="stylesheet" href="contact.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Contact Form</title>
+  <link rel="stylesheet" href="contact.css">
 </head>
+
 <body>
-    <div class="contact-container">
-        <h1>Contact</h1>
-        <form id="contact-form">
-            <label for="name">Name * </label>
-            <input type="text" id="name" name="name" placeholder="Your Name..." required>
-
-            <label for="email">Email Address * </label>
-            <input type="email" id="email" name="email" placeholder="Your Email Address..." required>
-
-            <label for="message">Message * </label>
-            <textarea id="message" name="message" placeholder="Your Message ..."></textarea>
-            <button type="submit">Submit</button>
-        </form>
+  <div class="sidebar">
+    <div class="sidebar-header">
+        <h1><a href="index.html">Lisa Liu</a></h1>
     </div>
-    <script src="contact.js"></script>
+      <nav class="top-navigation">
+        <ul id="nav-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="portfolio.html">Portfolio</a></li>
+              <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  
+<div class="contact-container">
+    <h2>Contact</h2>
+    <form id="contact-form">
+        <label for="name">Name * </label>
+        <input type="text" id="name" name="name" placeholder="Your Name..." required>
+
+        <label for="email">Email Address * </label>
+        <input type="email" id="email" name="email" placeholder="Your Email Address..." required>
+
+        <label for="message">Message * </label>
+        <textarea id="message" name="message" placeholder="Your Message ..."></textarea>
+        <button type="submit">Submit</button>
+    </form>
+</div>
+<footer>
+    <p>Copyright © 2024 Lisa Liu All Rights Reserved.</p>
+</footer>
+<script src="contact.js"></script>
+
 </body>
 
 </html>
