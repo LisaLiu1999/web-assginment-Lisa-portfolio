@@ -152,17 +152,25 @@ hr {
 /* you may also like */
 
 #you-may-also-like {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    margin: 50px auto;
+    margin-top: 5rem;
+    margin-left: 240px;
   }
   
   #you-may-also-like h2 {
     margin-bottom: 20px;
+    background-color: #f0e9df;
+    border-radius: 20px;
     font-size: 1.5rem;
+
   }
   
   #suggestion-link img {
-    max-width: 200px;
+    max-width: 400px;
     border-radius: 8px;
     transition: transform 0.3s ease;
   }
@@ -172,6 +180,7 @@ hr {
   }
   
   #suggestion-link p {
+    font-style: italic;
     margin-top: 10px;
     font-size: 1rem;
     color: #555;
@@ -204,7 +213,8 @@ footer {
     font-size: 0.9rem;
     padding: 1rem;
     width: 100%;
-    margin-top: auto;
+    margin-top: 20px;
+    margin-left: 120px;
 }
 
 /* Responsive Design */
@@ -229,15 +239,11 @@ footer {
     .portfolio-grid {
         grid-template-columns: 1fr;
     }
-}
-
-@media screen and  (max-width: 480px) {
-    .top-navigation ul {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
+    #you-may-also-like {
+        margin-left:0;
     }
-    .sidebar-header h1 {
-        font-size: 2rem;
+    footer {
+        margin-left: 0; 
+        background-color: #f0e9df;
     }
 }

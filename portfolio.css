@@ -208,13 +208,14 @@ hr {
 
 /* Footer */
 footer {
-    text-align: center;
-    background-color: #fff;
-    color: #707070;
-    font-size: 0.9rem;
-    padding: 1rem;
-    width: 100%;
-    margin-top: auto;
+  text-align: center;
+  background-color: #fff;
+  color: #707070;
+  font-size: 0.9rem;
+  padding: 1rem;
+  width: 100%;
+  margin-top: auto;
+  margin-left: 80px;
 }
 
 
@@ -249,6 +250,10 @@ footer {
 
     .portfolio-grid {
         grid-template-columns: repeat(1, 1fr);
+    }
+    footer {
+      margin-left:0;
+      background-color: #f0e9df;
     }
 }
 

@@ -149,31 +149,42 @@ hr {
     object-fit: contain;
 }
 
+/* you may also like */
+
 #you-may-also-like {
-    text-align: center;
-    margin: 50px auto;
-  }
-  
-  #you-may-also-like h2 {
-    margin-bottom: 20px;
-    font-size: 1.5rem;
-  }
-  
-  #suggestion-link img {
-    max-width: 200px;
-    border-radius: 8px;
-    transition: transform 0.3s ease;
-  }
-  
-  #suggestion-link img:hover {
-    transform: scale(1.05);
-  }
-  
-  #suggestion-link p {
-    margin-top: 10px;
-    font-size: 1rem;
-    color: #555;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 5rem;
+  margin-left: 240px;
+}
+
+#you-may-also-like h2 {
+  margin-bottom: 20px;
+  background-color: #f0e9df;
+  border-radius: 20px;
+  font-size: 1.5rem;
+
+}
+
+#suggestion-link img {
+  max-width: 400px;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+#suggestion-link img:hover {
+  transform: scale(1.05);
+}
+
+#suggestion-link p {
+  font-style: italic;
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #555;
+}
 
   /* back to top button */
   .back-to-top {
@@ -203,7 +214,8 @@ footer {
     font-size: 0.9rem;
     padding: 1rem;
     width: 100%;
-    margin-top: auto;
+    margin-top: 20px;
+    margin-left: 120px;
 }
 
 /* Responsive Design */
@@ -228,16 +240,11 @@ footer {
     .portfolio-grid {
         grid-template-columns: 1fr;
     }
-}
-
-@media screen and  (max-width: 480px) {
-    .top-navigation ul {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
-
-    .sidebar-header h1 {
-        font-size: 2rem;
-    }
+    #you-may-also-like {
+      margin-left:0;
+  }
+  footer {
+      margin-left: 0; 
+      background-color: #f0e9df;
+  }
 }

@@ -156,6 +156,8 @@ footer {
   padding: 1rem;
   width: 100%;
   margin-top: auto;
+  margin-left: 80px;
+
 }
 
 /* -------Responsive Design-------- */
@@ -180,5 +182,9 @@ footer {
 
   #contact-form {
   width: 100%;
+  }
+  footer {
+    margin-left:0;
+    background-color: #f0e9df;
   }
 }
