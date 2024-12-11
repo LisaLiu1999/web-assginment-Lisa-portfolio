@@ -149,6 +149,52 @@ hr {
     object-fit: contain;
 }
 
+#you-may-also-like {
+    text-align: center;
+    margin: 50px auto;
+  }
+  
+  #you-may-also-like h2 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+  }
+  
+  #suggestion-link img {
+    max-width: 200px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+  
+  #suggestion-link img:hover {
+    transform: scale(1.05);
+  }
+  
+  #suggestion-link p {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #555;
+  }
+
+  /* back to top button */
+  .back-to-top {
+    display: none; /* default hidden*/
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.back-to-top:hover {
+    background-color: #555;
+}
+
+  
+
 /* Footer */
 footer {
     text-align: center;

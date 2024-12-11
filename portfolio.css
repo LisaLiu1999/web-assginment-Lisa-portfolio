@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap');
 
-
 * {
     margin: 0;
     padding: 0;
@@ -93,6 +92,7 @@ hr {
     margin:  auto;
     border-top: 1px solid #b7b0ab;
 }
+
 .main-content {
   flex-grow: 1;
   padding: 40px 40px 40px 240px;
@@ -186,6 +186,25 @@ hr {
     opacity: 1; /* Show */
   }
   
+  /* back to top button */
+
+  .back-to-top {
+    display: none; /* default hidden*/
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.back-to-top:hover {
+    background-color: #555;
+}
+
 
 /* Footer */
 footer {
